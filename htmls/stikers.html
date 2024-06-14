@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lleva maximo 10 stikers</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+</head>
+<body>
+    <a href="../index.html">atras</a>
+    <h1>Puedes llevar hasta 10 poleras en total</h1>
+    <div class="container">
+        <div class="tarjetas">
+            <img src="../assets/imgs/git.jpg" width="200"  alt="">
+            <input type="number" class="input1">
+        </div>
+        <div class="tarjetas">
+            <img src="../assets/imgs/htm.jpg" width="200"  alt="">
+            <input type="number" class="input2">
+        </div>
+        <div class="tarjetas">
+            <img src="../assets/imgs/jsc.jpg" width="200"  alt="">
+            <input type="number" class="input3">
+        </div>
+    </div>
+    <div class="container2">
+        <p class="mensajeCantidadPoleras"></p>
+        <button class="botonVerificar" onclick="
+        num1=Number(document.querySelector('.input1').value);
+        num2=Number(document.querySelector('.input2').value);
+        num3=Number(document.querySelector('.input3').value);
+        total= num1+num2+num3
+        muchasPoleras=document.querySelector('.mensajeCantidadPoleras');
+        if(total>10){
+            
+            muchasPoleras.innerHTML= 'Llevas demasiadas poleras';
+        }else{
+            muchasPoleras.innerHTML='llevas ' + total+ ' poleras.'
+        }
+        ">Verificar</button>
+
+    </div>
+    
+    
+</body>
+</html>

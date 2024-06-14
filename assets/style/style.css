@@ -1,0 +1,34 @@
+/*PROYECTO LLEVA 10 STICKERS*/
+h1 {
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*PROYECTO PASSWORD*/
+.containerPassword{
+    height: 250px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}

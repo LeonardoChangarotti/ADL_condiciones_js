@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESA EL PASSWORD</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+</head>
+<body>
+    <a href="../index.html">atras</a>
+    <div class="containerPassword">
+        <h2>Ingresa el password!</h2>
+        <div class="containerSelect">
+            <select class="select1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select class="select2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select class="select3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+        </div>
+        <button onclick="
+        num1=Number(document.querySelector('.select1').value);
+        num2=Number(document.querySelector('.select2').value);
+        num3=Number(document.querySelector('.select3').value);
+        mensaje=document.querySelector('.mensajeYesOrNo');
+        if(num1==9 && num2==1 && num3==1){
+            mensaje.innerHTML=('Password 1 Correcto')
+        } else if (num1==7 && num2==1 && num3==4){
+            mensaje.innerHTML=('Password 2 Correcto')
+        } else {
+            mensaje.innerHTML=('Password Incorrecto')
+        }
+        "
+        
+        >Ingresar</button>
+        <p class="mensajeYesOrNo"></p>  <!--pasword correcto o password incorrecto-->
+
+    </div>
+    
+</body>
+</html>
